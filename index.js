@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 const argv = require('yargs').argv
-const chalk = require('chalk')
+const voca = require('voca')
 
-const adjective = require('./adjectives')
-const animal = require('./animals')
+const adjectives = require('./adjectives')
+const animals = require('./animals')
 
-if (argv.letter) {
-  console.log(chalk.green(`${adjective.get(argv.letter)} ${animal.get(argv.letter)}`))
-} else {
-  console.error('Invalid letter, please specify a letter with --letter=b')
-}
+const adjective = adjectives.get();
+const animal = animals.get();
+
+console.log(`${voca.titleCase(adjective)} ${voca.titleCase(animal)}`)
+console.log(voca.slugify(`${adjective} ${animal}`))
