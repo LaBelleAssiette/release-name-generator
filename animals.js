@@ -45,6 +45,7 @@ var animals = [
   'curlew',
   'deer',
   'dinosaur',
+  'diplodocus',
   'dog',
   'dogfish',
   'dolphin',

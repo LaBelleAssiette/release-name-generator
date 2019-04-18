@@ -237,6 +237,7 @@ var adjectives = [
   'different',
   'difficult',
   'diligent',
+  'diplomatic',
   'direful',
   'dirty',
   'disagreeable',
