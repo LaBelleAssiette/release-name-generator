@@ -19,6 +19,7 @@ var animals = [
   'bison',
   'boar',
   'buffalo',
+  'bull',
   'butterfly',
   'camel',
   'caribou',
